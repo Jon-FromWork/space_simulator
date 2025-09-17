@@ -13,6 +13,7 @@ struct celestial_body{
     float radius;
     float mass;
     Color color;
+    void calc_orbit_vel(vec2 star_position, float star_mass, float G);
 
     celestial_body();
     celestial_body(std::string name,vec2 pos,vec2 vel, float ma,float r,Color color);
